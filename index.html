@@ -1,108 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Althea" />
+    <meta
+      name="Description"
+      content="Page contains all things I'm learning how to create as I learn HTML."
+    />
+    <title>My First Web Page</title>
+    <link rel="icon" href="sample_img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Althea">
-        <meta name="Description" content="Page contains all things I'm learning how to create as I learn HTML.">
-        <title>My First Web Page</title>
-        <link rel="icon" href="sample_img.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
+  <body>
+    <header>
+      <h1>My Goals for the Year</h1>
 
-    <body>
-        <h1>My Goals for the Year</h1>
+      <nav>
+        <ul>
+          <li><a href="#html">Learning HTML</a></li>
+          <li><a href="#vacation">Planning a vacation</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <hr>
+    <hr />
+    <main>
+      <section id="html">
+        <h2>I'm Ready to Learn HTML</h2>
+        <p>This is my first web page.</p>
 
-        <nav>
-            <ul>
-                <li> <a href="#html">Learning HTML</a> </li>
-                <li> <a href="#vacation">Planning a vacation</a> </li>
-            </ul>
-        </nav>
+        <!--title is only seen when hovering over the image-->
+        <!--alt shows up when the img cant be seen from the folder-->
+        <img
+          src="img/html5logo.png"
+          alt="HTML5 logo"
+          title="I am learning HTML5"
+          width="300"
+          height="300"
+        />
 
-        <hr>
-        <section id="html">
-            <h2>I'm Ready to Learn HTML</h2>
-            <p>This is my first web page.</p>
+        <figure>
+          <figcaption>An Example of HTML5 Code</figcaption>
+          <p>
+            <code> &lt;h1&gt;Hello World!&lt;/h1&gt; </code>
+          </p>
+        </figure>
 
-            <!--title is only seen when hovering over the image-->
-            <!--alt shows up when the img cant be seen from the folder-->
-            <img src="img/html5logo.png" alt="HTML5 logo" title="I am learning HTML5" width="300" height="300">
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol>
+          <li>...I learn more about web dev.</li>
+          <li>...I plan out my schedule.</li>
+          <li>
+            ...I use resources from
+            <abbr title="Mozilla Developer Network">
+              <a href="https://developer.mozilla.org/">MDN</a> </abbr
+            >.
+          </li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="vacation">
+        <h2>I am Also Planning a Vacation</h2>
+        <p>I've been working hard and <em>really need a getaway</em>.</p>
+        <p>
+          I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.
+        </p>
+
+        <h3>Places I'd like to visit</h3>
+        <ul>
+          <li>
+            <p>I've heard good things about the Caribbean.</p>
+            <figure>
+              <img
+                src="img/caribbean_beach.jpg"
+                alt="Caribbean Beach"
+                title="I want to visit a Caribbean Beach"
+                width="1500"
+                height="1000"
+                loading="lazy"
+              />
+              <!--lazy loading is when we dont want to load everything, it only loads what is immediately visible to load the page faster-->
+              <figcaption>Caribbean Beach Getaway</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>I've heard good things about going here:</p>
+            <address>
+              Tambuli <br />
+              Shangri-la <br />
+              Mactan Newtown Beach Resort
+            </address>
 
             <figure>
-                <figcaption>An Example of HTML5 Code</figcaption>
-                <p>
-                    <code>
-                        &lt;h1&gt;Hello World!&lt;/h1&gt;
-                    </code>
-                </p>
+              <img
+                src="img/tambuli.jpg"
+                alt="Tambuli Beach Resort"
+                title="Best beach in Lapu-Lapu"
+                width="1024"
+                height="653"
+                loading="lazy"
+              />
+              <figcaption>A Tambuli Vacation Image</figcaption>
             </figure>
+          </li>
+        </ul>
 
-            <h3>My Daily Schedule</h3>
-            <p>Let me tell you how:</p>
-                <ol>
-                    <li>...I learn more about web dev.</li>
-                    <li>...I plan out my schedule.</li>
-                    <li>...I use resources from <abbr title="Mozilla Developer Network">
-                        <a href="https://developer.mozilla.org/">MDN</a>
-                    </abbr>.</li>
-                </ol> 
-        </section>
+        <!-- TODO: Add more places -->
+        <h3>Places I want to avoid</h3>
+        <dl>
+          <!--Description List-->
+          <dt>North Pole</dt>
+          <!--Description term-->
+          <dd>I hear this is <strong>cold</strong>!</dd>
+          <!--Description Detail-->
 
-        <hr>
-        
-        <section id="vacation">
-            <h2>I am Also Planning a Vacation</h2>
-            <p>I've been working hard and <em>really need a getaway</em>.</p>
-            <p>I live in <abbr title="Kansas">KS</abbr> so I want to visit a beach.</p>
+          <dt>South Pole</dt>
+          <dd>This is also cold.</dd>
 
-            <h3>Places I'd like to visit</h3>
-            <ul>
-                <li>
-                    <p>I've heard good things about the Caribbean.</p>
-                    <figure>
-                        <img src="img/caribbean_beach.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean Beach" width="1500" height="1000" loading="lazy">
-                        <!--lazy loading is when we dont want to load everything, it only loads what is immediately visible to load the page faster-->
-                        <figcaption>
-                            Caribbean Beach Getaway
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <p>I've heard good things about going here:</p>
-                    <address>
-                        Tambuli <br>
-                        Shangri-la <br>
-                        Mactan Newtown Beach Resort
-                    </address>
+          <dt>Mountain Tops</dt>
+          <dd>These are also cold.</dd>
+        </dl>
+      </section>
+    </main>
 
-                    <figure>
-                        <img src="img/tambuli.jpg" alt="Tambuli Beach Resort" title="Best beach in Lapu-Lapu" width="1024" height="653" loading="lazy">
-                        <figcaption> A Tambuli Vacation Image </figcaption>
-                    </figure>
-                </li>
-            </ul>
+    <hr />
 
-            <!-- TODO: Add more places --> 
-            <h3>Places I want to avoid</h3>
-            <dl> <!--Description List-->
-                <dt>North Pole</dt> <!--Description term-->
-                <dd>I hear this is <strong>cold</strong>!</dd> <!--Description Detail-->
-
-                <dt>South Pole</dt>
-                <dd>This is also cold.</dd>
-
-                <dt>Mountain Tops</dt>
-                <dd>These are also cold.</dd>
-            </dl>
-        </section>
-
-        <hr>
+    <footer>
+      <p>
         &lt;&lt;&lt; &copy; <a href="about.html">Althea Bagares</a> &gt;&gt;&gt;
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
-    </body>
+      </p>
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </body>
 </html>
