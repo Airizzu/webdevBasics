@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Althea">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Althea" />
     <meta
       name="Description"
       content="Page contains all things I'm learning how to create as I learn HTML."
-    >
+    />
     <title>My First Web Page</title>
-    <link rel="icon" href="sample_img.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="icon" href="sample_img.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
   </head>
 
   <body>
@@ -24,7 +24,7 @@
       </nav>
     </header>
 
-    <hr>
+    <hr />
     <main>
       <!--use articles when section has clear topic, use section when generic sections only-->
       <article id="html">
@@ -40,7 +40,7 @@
             title="I am learning HTML5"
             width="300"
             height="300"
-          >
+          />
 
           <figure>
             <figcaption>An Example of HTML5 Code</figcaption>
@@ -77,34 +77,61 @@
               </p>
             </details>
           </aside>
-          <br>
+          <br />
           <table>
-            <tr>
-              <th>Time</th>
-              <th>Activity</th>
-            </tr>
-            <tr>
-              <td>
-                <time datetime="08:00"> 8am </time> - <time datetime="11:00">11am</time>
-              </td>
-              <td>Write Code</td>
-            <tr>
-              <td>
-                <time datetime="11:00"> 11am </time> - <time datetime="12:00">12pm</time>
-              </td>
-              <td>Eat Lunch</td>
-            </tr>
-            <tr>
-              <td>
-                <time datetime="12:00"> 12pm </time> - <time datetime="17:00">5pm</time>
-              </td>
-              <td>Study for Other Courses</td>
-            </tr>
+            <caption>
+              My Daily Schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <time datetime="08:00"> 8am </time> -
+                  <time datetime="11:00">11am</time>
+                </td>
+                <td>Write Code</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <time datetime="11:00"> 11am </time> -
+                  <time datetime="12:00">12pm</time>
+                </td>
+                <td>Eat Lunch</td>
+              </tr>
+              <tr>
+                <td>
+                  <time datetime="12:00"> 12pm </time> -
+                  <time datetime="17:00">5pm</time>
+                </td>
+                <td>Study for Other Courses</td>
+              </tr>
+              <tr>
+                <td rowspan="2">All Other Times</td>
+                <td>Free Time</td>
+              </tr>
+              <tr>
+                <td>Sleep</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">
+                  And that's what I do every day, 5 days a week. Just eat,
+                  sleep, code ...and recharge!
+                </td>
+              </tr>
+            </tfoot>
           </table>
         </section>
       </article>
 
-      <hr>
+      <hr />
 
       <article id="vacation">
         <h2>I am Also Planning a Vacation</h2>
@@ -126,7 +153,7 @@
                   width="1500"
                   height="1000"
                   loading="lazy"
-                >
+                />
                 <!--lazy loading is when we dont want to load everything, it only loads what is immediately visible to load the page faster-->
                 <figcaption>Caribbean Beach Getaway</figcaption>
               </figure>
@@ -134,8 +161,8 @@
             <li>
               <p>I've heard good things about going here:</p>
               <address>
-                Tambuli <br>
-                Shangri-la <br>
+                Tambuli <br />
+                Shangri-la <br />
                 Mactan Newtown Beach Resort
               </address>
 
@@ -147,7 +174,7 @@
                   width="1024"
                   height="653"
                   loading="lazy"
-                >
+                />
                 <figcaption>A Tambuli Vacation Image</figcaption>
               </figure>
             </li>
@@ -173,7 +200,7 @@
       </article>
     </main>
 
-    <hr>
+    <hr />
 
     <footer>
       <p>
