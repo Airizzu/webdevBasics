@@ -1,64 +1,20 @@
-/* universal selector: matches every single element on the page*/
-
-/*
-    * { 
-        font-family: monospace;
-    }
-
-    body {
-        font-size: 22px;
-    }
-*/
-
-/* Type Selector (element): Targets elements by their HTML tag name, such as p, h1, or div. */
-/*
-    h1, h2 {
-        color:blue;
-    }
-
-    p {
-        color:purple;
-    }
-*/
-
-/* Class Selector (.class): Targets elements using a specific class attribute. (groups of text)*/
-/*
-    .highlight {
-        text-transform: uppercase;
-        background-color: gold;
-    }
-    .gray {
-        color: gray;
-    }
-*/
-
-/* ID selector (#id): Targets a single, unique element using its specific id attribute*/
-/*
-    #second { 
-        font-style: italic;
-    }
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-  padding: 10%;
+  padding: 5% 10%;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
 
-a {
-   color: blue;
+ol {
+  list-style-type: none;
+  padding: 0;
 }
 
-a:visited {
-    color: purple;
-}
-
-a:hover, a:focus {
-    color: dodgerblue;
-}
-
-a:active {
-    color: red;
+ul {
+  list-style-type: square;
+  text-align: center;
+  list-style-position: inside;
+  color: #00f;
+  line-height: 1.6;
 }
